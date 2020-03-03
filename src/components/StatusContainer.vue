@@ -1,18 +1,33 @@
 <template>
   <div class="statusContainer">
-    <div class="endpoint" :class="{ loading: !i.status }"
+    <span class="statusMessage" :style="{
+        opacity: isLoaded ? 1 : 0
+      }">
+      <span v-if="!amountErrored">
+        All systems are operating normally.
+      </span>
+      <span v-else-if="amountErrored === endpoints.length">
+        All endpoints are errored. This usually means we're performing maintenance.
+      </span>
+      <span v-else>
+        {{ amountErrored }} endpoints are errored.
+      </span>
+    </span>
+    <div class="listEndpoints">
+      <div class="endpoint" :class="{ loading: !i.status }"
          v-for="(i, index) in endpoints" :key="index"
-    >
-      <div class="left">
-        <i class="statusIcon" :class="{
-          'fas fa-dot-circle': !i.status,
-          'fas fa-check-circle': i.status && i.status === 200,
-          'fas fa-times-circle': i.status && i.status !== 200
-        }" />
-        <span class="serviceName">{{ i.name }}</span>
-      </div>
-      <div class="right">
-        <span class="serviceUrl">{{ i.url }}</span>
+      >
+        <div class="left">
+          <i class="statusIcon" :class="{
+            'fas fa-dot-circle': !i.status,
+            'fas fa-check-circle': i.status && i.status === 200,
+            'fas fa-times-circle': i.status && i.status !== 200
+          }" />
+          <span class="serviceName">{{ i.name }}</span>
+        </div>
+        <div class="right">
+          <span class="serviceUrl">{{ i.url }}</span>
+        </div>
       </div>
     </div>
   </div>
@@ -45,9 +60,17 @@ export default {
       this.checkStatus(endpoint, index);
     });
   },
+  computed: {
+    isLoaded() {
+      return !this.endpoints.filter((endpoint) => !endpoint.status).length;
+    },
+    amountErrored() {
+      return this.endpoints.filter(((endpoint) => endpoint.status !== 200)).length;
+    },
+  },
   methods: {
     checkStatus(endpoint, index) {
-      axios.get(`https://tribecamp.com${endpoint.url}`)
+      axios.head(`https://tribecamp.com${endpoint.url}`)
         .then((result) => {
           this.$set(this.endpoints[index], 'status', result.status);
         })
@@ -64,6 +87,15 @@ export default {
 <style lang="scss" scoped>
 .statusContainer {
   padding: 0 10%;
+
+  .statusMessage {
+    display: block;
+    font-family: monospace;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: opacity 1s;
+    transition-delay: 0.5s;
+  }
 
   .endpoint {
     display: flex;
