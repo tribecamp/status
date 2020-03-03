@@ -6,6 +6,9 @@
     <a href="https://instagram.com/tribecampofficial" target="_blank" class="btnInstagram">
       <i class="fab fa-instagram"></i>
     </a>
+    <a href="https://github.com/tribecamp" target="_blank" class="btnGitHub">
+      <i class="fab fa-github"></i>
+    </a>
   </div>
 </template>
 
@@ -36,6 +39,10 @@ export default {
 
     &.fa-instagram {
       color: #e35ef5;
+    }
+
+    &.fa-github {
+      color: black;
     }
   }
 }
