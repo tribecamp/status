@@ -3,6 +3,13 @@
     <branding-container />
     <status-container class="statusContainer" />
     <social-container class="socialContainer" />
+    <div class="openSourceContainer">
+      <span>
+        This project is open source and licensed under the MIT license!
+        <br>
+        Contributions can be made to <a href="https://github.com/tribecamp/status" target="_blank">tribecamp/status</a> on GitHub.
+      </span>
+    </div>
   </div>
 </template>
 
@@ -33,5 +40,17 @@ export default {
 .statusContainer,
 .socialContainer {
   margin-top: 60px;
+}
+
+.openSourceContainer {
+  text-align: center;
+  font-family: monospace;
+  font-size: 14px;
+  margin-top: 30px;
+  color: gray;
+
+  a {
+    color: #ffa500;
+  }
 }
 </style>
