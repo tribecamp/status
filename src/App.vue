@@ -10,6 +10,9 @@
         Contributions can be made to <a href="https://github.com/tribecamp/status" target="_blank">tribecamp/status</a> on GitHub.
       </span>
     </div>
+    <div class="goToTribecamp">
+      <a href="https://tribecamp.com">Go to Tribecamp</a>
+    </div>
   </div>
 </template>
 
@@ -48,6 +51,15 @@ export default {
   font-size: 14px;
   margin-top: 30px;
   color: gray;
+
+  a {
+    color: #ffa500;
+  }
+}
+
+.goToTribecamp {
+  text-align: center;
+  margin-top: 25px;
 
   a {
     color: #ffa500;
