@@ -7,7 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-      with:
-        github_token: '${{ secrets.GITHUB_TOKEN }}'
-    - name: Deploy to GitHub Pages
+    - name: Compile & commit files
       run: sh scripts/deploy.sh
+    - name: Deploy to GitHub Pages
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: 'gh-pages'
+        directory: 'dist'
