@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <branding-container />
-    <status-container />
+    <status-container class="statusContainer" />
   </div>
 </template>
 
@@ -23,5 +23,11 @@ export default {
   padding-top: 100px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+</style>
+
+<style lang="scss" scoped>
+.statusContainer {
+  margin-top: 60px;
 }
 </style>
