@@ -3,13 +3,11 @@ name: CI
 on: [push]
 
 jobs:
-  build:
-
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-    - name: Deploy to GitHub Pages
-      run: sh scripts/deploy.sh
       with:
         github_token: '${{ secrets.GITHUB_TOKEN }}'
+    - name: Deploy to GitHub Pages
+      run: sh scripts/deploy.sh
