@@ -86,8 +86,6 @@ export default {
 
 <style lang="scss" scoped>
 .statusContainer {
-  padding: 0 10%;
-
   .statusMessage {
     display: block;
     font-family: monospace;

@@ -45,6 +45,12 @@ export default {
   margin-top: 60px;
 }
 
+.statusContainer {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+}
+
 .openSourceContainer {
   text-align: center;
   font-family: monospace;
