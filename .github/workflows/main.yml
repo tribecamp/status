@@ -11,3 +11,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Deploy to GitHub Pages
       run: sh scripts/deploy.sh
+      with:
+        github_token: '${{ secrets.GITHUB_TOKEN }}'
