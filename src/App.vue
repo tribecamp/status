@@ -1,15 +1,18 @@
 <template>
   <div id="app">
     <branding-container />
+    <status-container />
   </div>
 </template>
 
 <script>
 import BrandingContainer from './components/BrandingContainer.vue';
+import StatusContainer from './components/StatusContainer.vue';
 
 export default {
   components: {
     BrandingContainer,
+    StatusContainer,
   },
 };
 </script>
