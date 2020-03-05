@@ -70,7 +70,11 @@ export default {
   },
   methods: {
     checkStatus(endpoint, index) {
-      axios.head(`https://tribecamp.com${endpoint.url}/service`)
+      const url = endpoint !== '/'
+        ? endpoint.url
+        : '';
+
+      axios.head(`https://tribecamp.com${url}/service`)
         .then((result) => {
           this.$set(this.endpoints[index], 'status', result.status);
         })
