@@ -70,7 +70,7 @@ export default {
   },
   methods: {
     checkStatus(endpoint, index) {
-      const url = endpoint !== '/'
+      const url = endpoint.url !== '/'
         ? endpoint.url
         : '';
 
