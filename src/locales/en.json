@@ -1,0 +1,16 @@
+{
+  "branding": {
+    "header": "Tribecamp Status"
+  },
+  "status": {
+    "systems_operating_normally": "All systems are operating normally.",
+    "all_endpoints_errored": "All endpoints are errored. This usually means we're performing maintenance.",
+    "some_endpoints_errored": "{amountErrored} endpoints are errored."
+  },
+  "open_source": {
+    "license_message": "This project is open source and licensed under the MIT license!",
+    "contributions_0": "Contributions can be made to",
+    "contributions_1": "on GitHub"
+  },
+  "go_to_tribecamp": "Go to Tribecamp"
+}

@@ -5,13 +5,13 @@
     <social-container class="socialContainer" />
     <div class="openSourceContainer">
       <span>
-        This project is open source and licensed under the MIT license!
+        {{ $t("open_source.license_message") }}
         <br>
-        Contributions can be made to <a href="https://github.com/tribecamp/status" target="_blank">tribecamp/status</a> on GitHub.
+        {{ $t("open_source.contributions_0") }} <a href="https://github.com/tribecamp/status" target="_blank">tribecamp/status</a> {{ $t("open_source.contributions_1") }}.
       </span>
     </div>
     <div class="goToTribecamp">
-      <a href="https://tribecamp.com">Go to Tribecamp</a>
+      <a href="https://tribecamp.com">{{ $t("go_to_tribecamp") }}</a>
     </div>
   </div>
 </template>
