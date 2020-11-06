@@ -9,8 +9,7 @@
   },
   "open_source": {
     "license_message": "This project is open source and licensed under the MIT license!",
-    "contributions_0": "Contributions can be made to",
-    "contributions_1": "on GitHub"
+    "contributions": "Contributions can be made to {0} on GitHub"
   },
   "go_to_tribecamp": "Go to Tribecamp"
 }
