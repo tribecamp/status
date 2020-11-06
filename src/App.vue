@@ -7,7 +7,9 @@
       <span>
         {{ $t("open_source.license_message") }}
         <br>
-        {{ $t("open_source.contributions_0") }} <a href="https://github.com/tribecamp/status" target="_blank">tribecamp/status</a> {{ $t("open_source.contributions_1") }}.
+        <i18n path="open_source.contributions">
+          <a href="https://github.com/tribecamp/status" target="_blank">tribecamp/status</a>
+        </i18n>
       </span>
     </div>
     <div class="goToTribecamp">
