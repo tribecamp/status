@@ -4,13 +4,13 @@
         opacity: isLoaded ? 1 : 0
       }">
       <span v-if="!amountErrored">
-        All systems are operating normally.
+        {{ $t("status.systems_operating_normally") }}
       </span>
       <span v-else-if="amountErrored === endpoints.length">
-        All endpoints are errored. This usually means we're performing maintenance.
+        {{ $t("status.all_endpoints_errored") }}
       </span>
       <span v-else>
-        {{ amountErrored }} endpoints are errored.
+        {{ $t("status.some_endpoints_errored", { amountErrored: amountErrored }) }}
       </span>
     </span>
     <div class="listEndpoints">

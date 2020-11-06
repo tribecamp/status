@@ -1,7 +1,7 @@
 <template>
   <div class="brandingContainer">
     <img src="~@/assets/logo.png" alt="Tribecamp Logo" class="logo">
-    <h1 class="header">Tribecamp Status</h1>
+    <h1 class="header">{{ $t("branding.header")}}</h1>
   </div>
 </template>
 
