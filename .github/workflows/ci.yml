@@ -7,11 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install Dependencies
+    - name: Install dependencies
       run: yarn install
     - name: ESLint
       run: yarn lint
-    - name: Compile & commit files
+    - name: Build website
+      run: yarn build
+    - name: Deploy files
       if: github.ref == 'refs/heads/master'
       run: sh scripts/deploy.sh
     - name: Deploy to GitHub Pages
