@@ -1,8 +1,6 @@
 #!/usr/bin/env sh
 set -e
 
-yarn install
-yarn build
 cd dist
 
 echo 'status.tribecamp.com' > CNAME
