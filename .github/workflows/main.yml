@@ -1,19 +1,20 @@
 name: CI
 
-on:
-  push:
-    branches:
-      - master
+on: [push, pull_request]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: ESLint
+      run: yarn lint
     - name: Compile & commit files
+      if: github.ref == 'refs/heads/master'
       run: sh scripts/deploy.sh
     - name: Deploy to GitHub Pages
       uses: ad-m/github-push-action@master
+      if: github.ref == 'refs/heads/master'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: 'gh-pages'

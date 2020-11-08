@@ -13,8 +13,8 @@ new Vue({
   i18n: new VueI18n({
     fallbackLocale: 'en',
     messages: {
-      en,
-    },
+      en
+    }
   }),
-  render: (h) => h(App),
+  render: (h) => h(App)
 }).$mount('#app');
