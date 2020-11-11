@@ -961,7 +961,7 @@
   resolved "https://registry.yarnpkg.com/@soda/get-current-script/-/get-current-script-1.0.2.tgz#a53515db25d8038374381b73af20bb4f2e508d87"
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
 
-"@tribecamp/eslint-config-base@^1.0.1":
+"@tribecamp/eslint-config-base@1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@tribecamp/eslint-config-base/-/eslint-config-base-1.0.1.tgz#63dbf7275043c2b4ed94579f7cd2f1dd7cd846fd"
   integrity sha512-ydAnfci5m+0Bc3RIFEKyagsnTCXgh3C5dQaBV4KtpK1Cwq/xSGyHbi/2XRxY25h3R5+IwBxLHSghJRgYet4dew==
@@ -975,7 +975,7 @@
     eslint-plugin-react "7.21.5"
     eslint-plugin-unicorn "23.0.0"
 
-"@tribecamp/eslint-config-vue@^1.0.1":
+"@tribecamp/eslint-config-vue@1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@tribecamp/eslint-config-vue/-/eslint-config-vue-1.0.1.tgz#36e67d45d25fd37ecdf4fffb1c0efcd63c0c5972"
   integrity sha512-E4exbmwXSDGzTaieypgaAbTWaj3zfvN/+P+EjthqA9eyW/Dd4a4vxdBd2rcaqkm1L7SSjq5dUj5B3qvUX3h3Bg==
