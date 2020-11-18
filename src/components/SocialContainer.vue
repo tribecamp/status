@@ -3,7 +3,7 @@
     <a href="https://twitter.com/TribecampStatus" target="_blank" class="btnTwitter">
       <i class="fab fa-twitter"></i>
     </a>
-    <a href="https://instagram.com/tribecampofficial" target="_blank" class="btnInstagram">
+    <a href="https://instagram.com/tribecamp_intl" target="_blank" class="btnInstagram">
       <i class="fab fa-instagram"></i>
     </a>
     <a href="https://github.com/tribecamp" target="_blank" class="btnGitHub">
