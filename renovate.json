@@ -2,5 +2,15 @@
   "extends": [
     "config:base"
   ],
-  "labels": ["dependencies"]
+  "labels": ["dependencies"],
+  "masterIssue": true,
+  "major": {
+    "labels": ["major", "dependencies"]
+  },
+  "minor": {
+    "labels": ["minor", "dependencies"]
+  },
+  "pin": {
+    "labels": ["pin", "dependencies"]
+  }
 }
