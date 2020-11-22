@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@babel/compat-data": "7.12.7",
-    "@tribecamp/eslint-config-base": "1.0.1",
+    "@tribecamp/eslint-config-base": "1.1.1",
     "@tribecamp/eslint-config-vue": "1.0.1",
     "@vue/cli-plugin-babel": "4.5.9",
     "@vue/cli-plugin-vuex": "4.5.9",
