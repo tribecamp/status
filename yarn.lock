@@ -961,15 +961,15 @@
   resolved "https://registry.yarnpkg.com/@soda/get-current-script/-/get-current-script-1.0.2.tgz#a53515db25d8038374381b73af20bb4f2e508d87"
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
 
-"@tribecamp/eslint-config-base@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@tribecamp/eslint-config-base/-/eslint-config-base-1.0.1.tgz#63dbf7275043c2b4ed94579f7cd2f1dd7cd846fd"
-  integrity sha512-ydAnfci5m+0Bc3RIFEKyagsnTCXgh3C5dQaBV4KtpK1Cwq/xSGyHbi/2XRxY25h3R5+IwBxLHSghJRgYet4dew==
+"@tribecamp/eslint-config-base@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@tribecamp/eslint-config-base/-/eslint-config-base-1.1.1.tgz#fd4ecaf941eb0bee9e2104cf1fa6791c5f65ed7b"
+  integrity sha512-4ve0o6Ajem2sJbB8+ytq5JGLxB7MqB3tj4g7zV34KpyqtO/66G3bWh1YgMhAzEijjBKMHDHUuXaOfHWUZLQofQ==
   dependencies:
     eslint-config-airbnb "18.2.1"
     eslint-config-airbnb-base "14.2.1"
     eslint-plugin-import "2.22.1"
-    eslint-plugin-jsdoc "30.7.7"
+    eslint-plugin-jsdoc "30.7.8"
     eslint-plugin-jsx-a11y "6.4.1"
     eslint-plugin-no-loops "0.3.0"
     eslint-plugin-react "7.21.5"
@@ -3717,10 +3717,10 @@ eslint-plugin-import@2.22.1:
     resolve "^1.17.0"
     tsconfig-paths "^3.9.0"
 
-eslint-plugin-jsdoc@30.7.7:
-  version "30.7.7"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-30.7.7.tgz#2af2c68e5adaf8a59fc3c72081a4b137098268bb"
-  integrity sha512-DmVMJC2AbpYX7X1KhnVT1a9ex1AUvG+q9G8i6hzjp3cpjW8vmKQTUmZnRS0//W+7HvMqeb+eXPANdCOzGVVZBQ==
+eslint-plugin-jsdoc@30.7.8:
+  version "30.7.8"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-30.7.8.tgz#4a678c25ddb2c5732163f0258bb1d05edf34f61c"
+  integrity sha512-OWm2AYvXjCl7nRbpcw5xisfSVkpVAyp4lGqL9T+DeK4kaPm6ecnmTc/G5s1PtcRrwbaI8bIWGzwScqv5CdGyxA==
   dependencies:
     comment-parser "^0.7.6"
     debug "^4.2.0"
