@@ -975,12 +975,12 @@
     eslint-plugin-react "7.21.5"
     eslint-plugin-unicorn "23.0.0"
 
-"@tribecamp/eslint-config-vue@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@tribecamp/eslint-config-vue/-/eslint-config-vue-1.0.1.tgz#36e67d45d25fd37ecdf4fffb1c0efcd63c0c5972"
-  integrity sha512-E4exbmwXSDGzTaieypgaAbTWaj3zfvN/+P+EjthqA9eyW/Dd4a4vxdBd2rcaqkm1L7SSjq5dUj5B3qvUX3h3Bg==
+"@tribecamp/eslint-config-vue@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@tribecamp/eslint-config-vue/-/eslint-config-vue-1.1.1.tgz#fd5cbfd5c8c7af7d7843144bdfa1d9b0f411e639"
+  integrity sha512-h2hwbjR+zDSwjV/ss8TJx4RdXydLDvGWFH9FPHSFboz0CWYJ78T7CM6LFONn7bRJsRxdt+2O1YX5+yj7Ctvx4A==
   dependencies:
-    eslint-plugin-html "6.1.0"
+    eslint-plugin-html "6.1.1"
     eslint-plugin-vue "7.1.0"
 
 "@types/anymatch@*":
@@ -3419,7 +3419,7 @@ domutils@^1.5.1, domutils@^1.7.0:
     dom-serializer "0"
     domelementtype "1"
 
-domutils@^2.0.0:
+domutils@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-2.4.2.tgz#7ee5be261944e1ad487d9aa0616720010123922b"
   integrity sha512-NKbgaM8ZJOecTZsIzW5gSuplsX2IWW2mIK7xVr8hTQF2v1CJWTmLZ1HOCh5sH+IzVPAGE5IucooOkvwBRAdowA==
@@ -3691,12 +3691,12 @@ eslint-module-utils@^2.6.0:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-html@6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-html/-/eslint-plugin-html-6.1.0.tgz#0e0d4845d4b3eb6e199652385e272f7b722673db"
-  integrity sha512-xcqithhnjUxoEDRL0hYci4RSS8EZ1NGr3/H8x3BxJvxgbu4R3YaEUea9i93j95NuAgoAbOUfNmybta8fqi4UbA==
+eslint-plugin-html@6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-html/-/eslint-plugin-html-6.1.1.tgz#95aee151900b9bb2da5fa017b45cc64456a0a74e"
+  integrity sha512-JSe3ZDb7feKMnQM27XWGeoIjvP4oWQMJD9GZ6wW67J7/plVL87NK72RBwlvfc3tTZiYUchHhxAwtgEd1GdofDA==
   dependencies:
-    htmlparser2 "^4.1.0"
+    htmlparser2 "^5.0.1"
 
 eslint-plugin-import@2.22.1:
   version "2.22.1"
@@ -4763,14 +4763,14 @@ htmlparser2@^3.3.0:
     inherits "^2.0.1"
     readable-stream "^3.1.1"
 
-htmlparser2@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-4.1.0.tgz#9a4ef161f2e4625ebf7dfbe6c0a2f52d18a59e78"
-  integrity sha512-4zDq1a1zhE4gQso/c5LP1OtrhYTncXNSpvJYtWJBtXAETPlMfi3IFNjGuQbYLuVY4ZR0QMqRVvo4Pdy9KLyP8Q==
+htmlparser2@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-5.0.1.tgz#7daa6fc3e35d6107ac95a4fc08781f091664f6e7"
+  integrity sha512-vKZZra6CSe9qsJzh0BjBGXo8dvzNsq/oGvsjfRdOrrryfeD9UOBEEQdeoqCRmKZchF5h2zOBMQ6YuQ0uRUmdbQ==
   dependencies:
     domelementtype "^2.0.1"
-    domhandler "^3.0.0"
-    domutils "^2.0.0"
+    domhandler "^3.3.0"
+    domutils "^2.4.2"
     entities "^2.0.0"
 
 http-deceiver@^1.2.7:
