@@ -14,11 +14,11 @@ jobs:
     - name: Build website
       run: yarn build
     - name: Deploy files
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/develop'
       run: sh scripts/deploy.sh
     - name: Deploy to GitHub Pages
       uses: ad-m/github-push-action@master
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/develop'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: 'gh-pages'
