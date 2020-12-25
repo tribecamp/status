@@ -1,13 +1,16 @@
 <template>
   <div class="socialContainer">
     <a href="https://twitter.com/TribecampStatus" target="_blank" class="btnTwitter">
-      <i class="fab fa-twitter"></i>
+      <i class="fab fa-twitter" />
     </a>
-    <a href="https://instagram.com/tribecamp_intl" target="_blank" class="btnInstagram">
-      <i class="fab fa-instagram"></i>
+    <a href="https://instagram.com/tribecampofficial" target="_blank" class="btnInstagram">
+      <i class="fab fa-instagram" />
     </a>
     <a href="https://github.com/tribecamp" target="_blank" class="btnGitHub">
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github" />
+    </a>
+    <a href="https://www.linkedin.com/company/tribecamp" target="_blank" class="btnLinkedIn">
+      <i class="fab fa-linkedin" />
     </a>
   </div>
 </template>
@@ -43,6 +46,12 @@ export default {
 
     &.fa-github {
       color: black;
+      @media (prefers-color-scheme: dark) {
+        color: white;
+      }
+    }
+    &.fa-linkedin {
+      color: #0a66c2;
     }
   }
 }

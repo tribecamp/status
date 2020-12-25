@@ -27,8 +27,8 @@ export default {
   components: {
     BrandingContainer,
     StatusContainer,
-    SocialContainer,
-  },
+    SocialContainer
+  }
 };
 </script>
 
@@ -38,6 +38,15 @@ export default {
   padding-top: 100px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #1d1d1d;
+  }
 }
 </style>
 

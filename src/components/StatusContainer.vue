@@ -1,8 +1,9 @@
 <template>
   <div class="statusContainer">
     <span class="statusMessage" :style="{
-        opacity: isLoaded ? 1 : 0
-      }">
+      opacity: isLoaded ? 1 : 0
+    }"
+    >
       <span v-if="!amountErrored">
         {{ $t("status.systems_operating_normally") }}
       </span>
@@ -14,15 +15,16 @@
       </span>
     </span>
     <div class="listEndpoints">
-      <div class="endpoint" :class="{ loading: !i.status }"
-         v-for="(i, index) in endpoints" :key="index"
+      <div v-for="(i, index) in endpoints" :key="index"
+           class="endpoint" :class="{ loading: !i.status }"
       >
         <div class="left">
           <i class="statusIcon" :class="{
             'fas fa-dot-circle': !i.status,
             'fas fa-check-circle': i.status && i.status === 200,
             'fas fa-times-circle': i.status && i.status !== 200
-          }" />
+          }"
+          />
           <span class="serviceName">{{ i.name }}</span>
         </div>
         <div class="right">
@@ -42,23 +44,18 @@ export default {
       endpoints: [
         {
           name: 'Tribecamp Web',
-          url: '/',
+          url: '/'
         },
         {
           name: 'Tribecamp Core (API)',
-          url: '/api',
+          url: '/api'
         },
         {
           name: 'Tribecamp Authentication',
-          url: '/api/auth',
-        },
-      ],
+          url: '/api/auth'
+        }
+      ]
     };
-  },
-  created() {
-    this.endpoints.forEach((endpoint, index) => {
-      this.checkStatus(endpoint, index);
-    });
   },
   computed: {
     isLoaded() {
@@ -66,7 +63,12 @@ export default {
     },
     amountErrored() {
       return this.endpoints.filter(((endpoint) => endpoint.status !== 200)).length;
-    },
+    }
+  },
+  created() {
+    this.endpoints.forEach((endpoint, index) => {
+      this.checkStatus(endpoint, index);
+    });
   },
   methods: {
     checkStatus(endpoint, index) {
@@ -83,8 +85,8 @@ export default {
             ? error.response.status
             : 'errored');
         });
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -106,7 +108,10 @@ export default {
     padding: 12px;
     margin-bottom: 15px;
     font-size: 22px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.12);
+    @media (prefers-color-scheme: dark) {
+      background-color: #303030;
+    }
+    background-color: #f0f0f0;
     border-radius: 4px;
     transition: opacity 0.5s;
 
@@ -146,6 +151,10 @@ export default {
       font-size: 16px;
       color: gray;
     }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: #dfdfdf;
   }
 }
 </style>

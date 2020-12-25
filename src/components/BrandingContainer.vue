@@ -1,7 +1,9 @@
 <template>
   <div class="brandingContainer">
     <img src="~@/assets/logo.png" alt="Tribecamp Logo" class="logo">
-    <h1 class="header">{{ $t("branding.header")}}</h1>
+    <h1 class="header">
+      {{ $t("branding.header") }}
+    </h1>
   </div>
 </template>
 
@@ -14,6 +16,10 @@ export default {
 <style lang="scss" scoped>
 .brandingContainer {
   text-align: center;
+
+  @media (prefers-color-scheme: dark) {
+    color: #dfdfdf;
+  }
 
   .logo {
     width: 200px;
