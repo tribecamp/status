@@ -12,6 +12,9 @@
     <a href="https://www.linkedin.com/company/tribecamp" target="_blank" class="btnLinkedIn">
       <i class="fab fa-linkedin" />
     </a>
+    <a href="https://discord.gg/k8cfqZkhqZ" target="_blank" class="btnDiscord">
+      <i class="fab fa-discord" />
+    </a>
   </div>
 </template>
 
@@ -52,6 +55,9 @@ export default {
     }
     &.fa-linkedin {
       color: #0a66c2;
+    }
+    &.fa-discord {
+      color: #7289da;
     }
   }
 }
