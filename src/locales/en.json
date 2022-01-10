@@ -4,7 +4,7 @@
   },
   "status": {
     "systems_operating_normally": "All systems are operating normally.",
-    "all_endpoints_errored": "All endpoints are errored. This usually means we're performing maintenance.",
+    "all_endpoints_errored": "All endpoints are dead (just like this project haha lol :\"( ) This usually means we're performing maintenance.",
     "some_endpoints_errored": "{amountErrored} endpoints are errored."
   },
   "open_source": {
